@@ -39,7 +39,8 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 
 class FollowViewSet(
-    mixins.CreateModelMixin, mixins.ListModelMixin,
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
     viewsets.GenericViewSet
 ):
     serializer_class = FollowSerializer
